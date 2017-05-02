@@ -1,0 +1,26 @@
+AnswerIntent {VideoGameName}
+AnswerIntent {VideoGameGenre}
+AnswerIntent {VideoGameDev}
+AnswerIntent {ReleaseYear}
+AnswerIntent {Platform}
+AnswerIntent tell me about {VideoGameName}
+AnswerIntent tell me about {VideoGameGenre}
+AnswerIntent tell me about {VideoGameDev}
+AnswerIntent tell me about {ReleaseYear}
+AnswerIntent tell me about {Platform}
+AnswerIntent what do you know about {VideoGameName}
+AnswerIntent what do you know about {VideoGameGenre}
+AnswerIntent what do you know about {VideoGameDev}
+AnswerIntent what do you know about {ReleaseYear}
+AnswerIntent what do you know about {Platform}
+AnswerIntent {VideoGameName} information
+AnswerIntent {VideoGameGenre} information
+AnswerIntent {VideoGameDev} information
+AnswerIntent {ReleaseYear} information
+AnswerIntent {Platform} information
+QuizIntent start a quiz
+QuizIntent start a quiz game
+QuizIntent and start a quiz
+QuizIntent and quiz me
+QuizIntent for a quiz
+QuizIntent a quiz

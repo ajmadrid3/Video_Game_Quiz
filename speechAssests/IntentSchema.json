@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "VideoGameName",
+          "type": "AMAZON.VideoGame"
+        },
+        {
+          "name": "VideoGameGenre",
+          "type": "GENRE"
+        },
+        {
+          "name": "VideoGameDev",
+          "type": "DEVELOPER"
+        },
+        {
+          "name": "ReleaseYear",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        },
+        {
+          "name": "Platform",
+          "type": "CONSOLE"
+        }
+      ],
+      "intent": "AnswerIntent"
+    },
+    {
+      "intent": "QuizIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    {
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    }
+  ]
+}

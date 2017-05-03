@@ -8,15 +8,22 @@ var APP_ID = undefined;
 
 
 var data = [
-                {VideoGameName: "Battlefield 1",        VideoGameGenre: "First-person shooter",     VideoGameDev: "DICE",                       ReleaseYear: 2016,  Platform: "Xbox One" },
-                {VideoGameName: "Halo 5: Guardians",    VideoGameGenre: "First-person shooter",     VideoGameDev: "343 Industries",             ReleaseYear: 2015,  Platform: "Xbox One" },
-                {VideoGameName: "Overwatch",            VideoGameGenre: "First-person shooter",     VideoGameDev: "Blizzard Entertainment",     ReleaseYear: 2016,  Platform: "PC"},
-                {VideoGameName: "Portal 2",             VideoGameGenre: "Puzzle-platform",          VideoGameDev: "Valve",                      ReleaseYear: 2011,  Platform: "PC"},
-                {VideoGameName: "Civilization 5",       VideoGameGenre: "Turn-based strategy",      VideoGameDev: "Firaxis Games",              ReleaseYear: 2010,  Platform: "PC"},
-                {VideoGameName: "Destiny",              VideoGameGenre: "First-person shooter",     VideoGameDev: "Bungie",                     ReleaseYear: 2014,  Platform: "PlayStation 4"},
-                {VideoGameName: "Pokemon Red",          VideoGameGenre: "Role-playing",             VideoGameDev: "Game Freak",                 ReleaseYear: 1996,  Platform: "Game Boy"},
-                {VideoGameName: "Super Mario 64",       VideoGameGenre: "Platformer",               VideoGameDev: "Nintendo",                   ReleaseYear: 1996,  Platform: "Nintendo 64"},
-                {VideoGameName: "The Legend of Zelda",  VideoGameGenre: "Action-adventure",         VideoGameDev: "Nintendo",                   ReleaseYear: 1986,  Platform: "Nintendo Entertainment System"}
+                {VideoGameName: "Battlefield 1",                        VideoGameGenre: "First-person shooter",     VideoGameDev: "DICE",                       ReleaseYear: 2016,  Platform: "Xbox One" },
+                {VideoGameName: "Halo 5: Guardians",                    VideoGameGenre: "First-person shooter",     VideoGameDev: "343 Industries",             ReleaseYear: 2015,  Platform: "Xbox One" },
+                {VideoGameName: "Overwatch",                            VideoGameGenre: "First-person shooter",     VideoGameDev: "Blizzard Entertainment",     ReleaseYear: 2016,  Platform: "PC"},
+                {VideoGameName: "Portal 2",                             VideoGameGenre: "Puzzle-platform",          VideoGameDev: "Valve",                      ReleaseYear: 2011,  Platform: "PC"},
+                {VideoGameName: "Civilization 5",                       VideoGameGenre: "Turn-based strategy",      VideoGameDev: "Firaxis Games",              ReleaseYear: 2010,  Platform: "PC"},
+                {VideoGameName: "Destiny",                              VideoGameGenre: "First-person shooter",     VideoGameDev: "Bungie",                     ReleaseYear: 2014,  Platform: "PlayStation 4"},
+                {VideoGameName: "Pokemon Red",                          VideoGameGenre: "Role-playing",             VideoGameDev: "Game Freak",                 ReleaseYear: 1996,  Platform: "Game Boy"},
+                {VideoGameName: "Super Mario 64",                       VideoGameGenre: "Platformer",               VideoGameDev: "Nintendo",                   ReleaseYear: 1996,  Platform: "Nintendo 64"},
+                {VideoGameName: "The Legend of Zelda",                  VideoGameGenre: "Action-adventure",         VideoGameDev: "Nintendo",                   ReleaseYear: 1986,  Platform: "Nintendo Entertainment System"},
+                {VideoGameName: "Pong",                                 VideoGameGenre: "Sports",                   VideoGameDev: "Atari",                      ReleaseYear: 1972,  Platform: "Arcade"},
+                {VideoGameName: "Halo: Combat Evolved",                 VideoGameGenre: "First-person shoorter",    VideoGameDev: "Bungie",                     ReleaseYear: 2001,  Platform: "Xbox"},
+                {VideoGameName: "Sonic Adventure",                      VideoGameGenre: "Platformer",               VideoGameDev: "Sonic Team",                 ReleaseYear: 1999,  Platform: "Dreamcast"},
+                {VideoGameName: "Call of Duty: Modern Warefare 2",      VideoGameGenre: "First-person shooter",     VideoGameDev: "Infinity Ward",              ReleaseYear: 2009,  Platform: "Xbox 360"},
+                {VideoGameName: "Super Mario World",                    VideoGameGenre: "Platformer",               VideoGameDev: "Nintendo",                   ReleaseYear: 1991,  Platform: "Super Nintendo Entertainment System"},
+                {VideoGameName: "Donkey Kong Country",                  VideoGameGenre: "Platformer",               VideoGameDev: "Rare",                       ReleaseYear: 1994,  Platform: "Super Nintendo Entertainment System"},
+                {VideoGameName: "Grand Theft Auto: San Andreas",        VideoGameGenre: "Action-adventure",         VideoGameDev: "Rockstar",                   ReleaseYear: 2004,  Platform: "PlayStation 2"}
             ];
 
 //=========================================================================================================================================
@@ -31,7 +38,7 @@ var speechConsCorrect = ["Booya", "All righty", "Bam", "Bazinga", "Bingo", "Boom
 var speechConsWrong = ["Argh", "Aw man", "Blarg", "Blast", "Boo", "Bummer", "Darn", "D'oh", "Dun dun dun", "Eek", "Honk", "Le sigh",
 "Mamma mia", "Oh boy", "Oh dear", "Oof", "Ouch", "Ruh roh", "Shucks", "Uh oh", "Wah wah", "Whoops a daisy", "Yikes"];
 
-var WELCOME_MESSAGE = "Welcome to Video Game Quiz!  You can ask me about a majority of video games, or you can ask me to start a quiz.  What would you like to do?";  
+var WELCOME_MESSAGE = "Welcome to Video Game Quiz!  You can ask me for information about a video game, or you can ask me to start a quiz.  What would you like to do?";  
 
 var START_QUIZ_MESSAGE = "OK.  I will ask you 10 questions about video games.";
 
@@ -39,7 +46,7 @@ var EXIT_SKILL_MESSAGE = "Thank you for playing the Video Game Quiz!  Let's play
 
 var REPROMPT_SPEECH = "Which other video game would you like to know about?";
 
-var HELP_MESSAGE = "I know lots of things about video games.  You can ask me about a game and I'll tell you what I know.  You can also test your knowledge by asking me to start a quiz.  What would you like to do?";
+var HELP_MESSAGE = "I hold a collection of video game knowledge.  You can ask me about a game and I'll tell you information about it.  You can also test your knowledge by asking me to start a quiz.  What would you like to do?";
 
 function getBadAnswer(item) { return "I'm sorry. " + item + " is not something I know very much about in this skill. " + HELP_MESSAGE; }
 
@@ -49,7 +56,7 @@ function getFinalScore(score, counter) { return "Your final score is " + score +
 
 function getSpeechDescription(item)
 {
-    var sentence = item.VideoGameName + " is a " + item.VideoGameGenre + ".  It was developed by " + item.VideoGameDev + " and released for " + item.Platform + " in " + item.ReleaseYear + ".  Which other video game would you like to know about?";
+    var sentence = item.VideoGameName + " is a " + item.VideoGameGenre + ".  It was developed by " + <say-as interpret-as="digits">item.VideoGameDev</say-as> + " and released for " + item.Platform + " in " + item.ReleaseYear + ".  Which other video game would you like to know about?";
     return sentence;
 }
 
@@ -129,7 +136,7 @@ var startHandlers = Alexa.CreateStateHandler(states.START,{
     "AnswerIntent": function() {
         var item = getItem(this.event.request.intent.slots);
 
-        if (item[Object.getOwnPropertyNames(data[0])[0]] != undefined)
+        if (item[Object.getOwnPropertyNames(data[0])[0]] !== undefined)
         {
             if (USE_CARDS_FLAG)
             {

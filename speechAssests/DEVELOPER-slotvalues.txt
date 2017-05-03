@@ -1,6 +1,34 @@
+Activision
+Atari
+Bandai Namco Studios
+Bethesda
+BioWare
 Blizzard Entertainment
 Bungie
+Capcom
+CD Projekt RED
+Crytek
 DICE
+Electronic Arts
+Epic Games
 Firaxis Games
+Game Freak
+Gearbox
+iD Software
+Infinity Ward
+Insomniac Games
+Konami
+Maxis Software
+Microsoft Studios
+Mojang
+Neversoft
+Nintendo
+Rare
+Rockstar
+Sega
+Square Enix
+Telltale Games
+Treyarch
+Ubisoft
 Valve
 343 Industries

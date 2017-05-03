@@ -1,3 +1,25 @@
+Atari 2600
+Game Boy
+Game Boy Advance
+Dreamcast
+GameCube
+Intellivision
+Nintendo DS
+Nintendo Entertainment System
+Nintendo Switch
+Nintendo 3DS
+Nintendo 64
 PC
-Playstation 4
+PlayStation
+PlayStation Vita
+PlayStation 2
+PlayStation 3
+PlayStation 4
+Sega Master System
+Sega Genesis
+Super Nintendo Entertainment System
+Wii
+Wii U
+Xbox
 Xbox One
+Xbox 360

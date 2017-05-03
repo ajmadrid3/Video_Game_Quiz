@@ -1,3 +1,16 @@
+Action-adventure
+Fighting
 First-person shooter
+MMO
+Platformer
 Puzzle-platform
+Racing
+Real-time strategy
+Role-playing
+Simulation
+Sports
+Stealth
+Survival
+Survival horror
+Third-person shooter
 Turn-based strategy

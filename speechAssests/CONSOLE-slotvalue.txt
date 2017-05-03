@@ -1,3 +1,5 @@
+Arcade
+Atari
 Atari 2600
 Game Boy
 Game Boy Advance

@@ -56,7 +56,7 @@ function getFinalScore(score, counter) { return "Your final score is " + score +
 
 function getSpeechDescription(item)
 {
-    var sentence = item.VideoGameName + " is a " + item.VideoGameGenre + ".  It was developed by " + <say-as interpret-as="digits">item.VideoGameDev</say-as> + " and released for " + item.Platform + " in " + item.ReleaseYear + ".  Which other video game would you like to know about?";
+    var sentence = item.VideoGameName + " is a " + item.VideoGameGenre + ".  It was developed by <say-as interpret-as='digits'>" + item.VideoGameDev + "</say-as> and released for " + item.Platform + " in " + item.ReleaseYear + ".  Which other video game would you like to know about?";
     return sentence;
 }
 
@@ -136,17 +136,9 @@ var startHandlers = Alexa.CreateStateHandler(states.START,{
     "AnswerIntent": function() {
         var item = getItem(this.event.request.intent.slots);
 
-        if (item[Object.getOwnPropertyNames(data[0])[0]] !== undefined)
+        if (item[Object.getOwnPropertyNames(data[0])[0]] != undefined)
         {
-            if (USE_CARDS_FLAG)
-            {
-                var imageObj = {smallImageUrl: getSmallImage(item), largeImageUrl: getLargeImage(item)};
-                this.emit(":askWithCard", getSpeechDescription(item), REPROMPT_SPEECH, getCardTitle(item), getTextDescription(item), imageObj);
-            }
-            else
-            {
-                this.emit(":ask", getSpeechDescription(item), REPROMPT_SPEECH);
-            }
+            this.emit(":ask", getSpeechDescription(item), REPROMPT_SPEECH);
         }
         else
         {

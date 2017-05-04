@@ -136,14 +136,21 @@ var startHandlers = Alexa.CreateStateHandler(states.START,{
     "AnswerIntent": function() {
         var item = getItem(this.event.request.intent.slots);
 
-        if (item[Object.getOwnPropertyNames(data[0])[0]] != undefined)
+        if (item == null) 
         {
-            this.emit(":ask", getSpeechDescription(item), REPROMPT_SPEECH);
+            this.emit(":ask", HELP_MESSAGE, HELP_MESSAGE);
         }
-        else
+        else 
         {
-            this.emit(":ask", getBadAnswer(item), getBadAnswer(item));
+            if (item[Object.getOwnPropertyNames(data[0])[0]] != undefined)
+            {
+                this.emit(":ask", getSpeechDescription(item), REPROMPT_SPEECH);
+            }
+            else
+            {
+                this.emit(":ask", getBadAnswer(item), getBadAnswer(item));
             
+            }
         }
     },
     "QuizIntent": function() {

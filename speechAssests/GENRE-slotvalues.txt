@@ -1,12 +1,16 @@
 Action-adventure
+Arcade
 Fighting
 First-person shooter
+Maze
 MMO
+Multi-directional shooter
 Platformer
 Puzzle-platform
 Racing
 Real-time strategy
 Role-playing
+Shoot 'em up
 Simulation
 Sports
 Stealth

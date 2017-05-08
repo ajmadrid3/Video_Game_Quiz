@@ -17,10 +17,12 @@ Gearbox
 iD Software
 Infinity Ward
 Insomniac Games
+Kee Games
 Konami
 Maxis Software
 Microsoft Studios
 Mojang
+Namco
 Neversoft
 Nintendo
 Rare
@@ -28,6 +30,7 @@ Rockstar
 Sega
 Sonic Team
 Square Enix
+Taito
 Telltale Games
 Treyarch
 Ubisoft

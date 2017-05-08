@@ -1,4 +1,6 @@
 Activision
+Advanced Microcomputer Systems
+Alexei Pajitnov
 Atari
 Bandai Namco Studios
 Bethesda
@@ -7,13 +9,16 @@ Blizzard Entertainment
 Bungie
 Capcom
 CD Projekt RED
+Chunsoft
 Crytek
+Data East
 DICE
 Electronic Arts
 Epic Games
 Firaxis Games
 Game Freak
 Gearbox
+Gottlieb
 iD Software
 Infinity Ward
 Insomniac Games
@@ -21,18 +26,24 @@ Kee Games
 Konami
 Maxis Software
 Microsoft Studios
+Midway
 Mojang
+Muse Software
 Namco
 Neversoft
 Nintendo
+Origin Systems
 Rare
+Richard Garriott
 Rockstar
 Sega
 Sonic Team
+Square
 Square Enix
 Taito
 Telltale Games
 Treyarch
 Ubisoft
 Valve
+Williams Electronics
 343 Industries

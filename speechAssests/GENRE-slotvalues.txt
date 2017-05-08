@@ -1,11 +1,14 @@
+Action
 Action-adventure
 Arcade
 Fighting
 First-person shooter
+Interactive movie
 Maze
 MMO
 Multi-directional shooter
 Platformer
+Puzzle
 Puzzle-platform
 Racing
 Real-time strategy

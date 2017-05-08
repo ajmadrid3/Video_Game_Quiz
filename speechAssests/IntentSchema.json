@@ -15,6 +15,10 @@
           "type": "DEVELOPER"
         },
         {
+          "name": "VideoGamePub",
+          "type": "PUBLISHER"
+        },
+        {
           "name": "ReleaseYear",
           "type": "AMAZON.FOUR_DIGIT_NUMBER"
         },

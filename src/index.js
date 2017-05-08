@@ -8,7 +8,8 @@ var APP_ID = undefined;
 
 
 var data = [
-                {VideoGameName: "Battlefield 1",                        VideoGameGenre: "First-person shooter",     VideoGameDev: "DICE",                       ReleaseYear: 2016,  Platform: "Xbox One" },
+                {VideoGameName: "Pong",                                 VideoGameGenre: "Sports",                   VideoGameDev: "Atari",                      VideoGamePub: "Atari",          ReleaseYear: 1972,  Platform: "Arcade"}
+                /*{VideoGameName: "Battlefield 1",                        VideoGameGenre: "First-person shooter",     VideoGameDev: "DICE",                       ReleaseYear: 2016,  Platform: "Xbox One" },
                 {VideoGameName: "Halo 5: Guardians",                    VideoGameGenre: "First-person shooter",     VideoGameDev: "343 Industries",             ReleaseYear: 2015,  Platform: "Xbox One" },
                 {VideoGameName: "Overwatch",                            VideoGameGenre: "First-person shooter",     VideoGameDev: "Blizzard Entertainment",     ReleaseYear: 2016,  Platform: "PC"},
                 {VideoGameName: "Portal 2",                             VideoGameGenre: "Puzzle-platform",          VideoGameDev: "Valve",                      ReleaseYear: 2011,  Platform: "PC"},
@@ -24,7 +25,7 @@ var data = [
                 {VideoGameName: "Super Mario World",                    VideoGameGenre: "Platformer",               VideoGameDev: "Nintendo",                   ReleaseYear: 1991,  Platform: "Super Nintendo Entertainment System"},
                 {VideoGameName: "Donkey Kong Country",                  VideoGameGenre: "Platformer",               VideoGameDev: "Rare",                       ReleaseYear: 1994,  Platform: "Super Nintendo Entertainment System"},
                 {VideoGameName: "Grand Theft Auto: San Andreas",        VideoGameGenre: "Action-adventure",         VideoGameDev: "Rockstar",                   ReleaseYear: 2004,  Platform: "PlayStation 2"}
-            ];
+            */];
 
 //=========================================================================================================================================
 // Messages: 
@@ -56,7 +57,7 @@ function getFinalScore(score, counter) { return "Your final score is " + score +
 
 function getSpeechDescription(item)
 {
-    var sentence = item.VideoGameName + " is a " + item.VideoGameGenre + ".  It was developed by <say-as interpret-as='digits'>" + item.VideoGameDev + "</say-as> and released for " + item.Platform + " in " + item.ReleaseYear + ".  Which other video game would you like to know about?";
+    var sentence = item.VideoGameName + " is a " + item.VideoGameGenre + ".  It was developed by <say-as interpret-as='digits'>" + item.VideoGameDev + "</say-as> and published by " + item.VideoGamePub + ".  It was released in " + item.ReleaseYear + " for " + item.Platform + ".  Which other video game would you like to know about?";
     return sentence;
 }
 

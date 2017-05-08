@@ -1,5 +1,6 @@
 var data = [
-                {VideoGameName: "Battlefield 1",                        VideoGameGenre: "First-person shooter",     VideoGameDev: "DICE",                       ReleaseYear: 2016,  Platform: "Xbox One" },
+                {VideoGameName: "Pong",                                 VideoGameGenre: "Sports",                   VideoGameDev: "Atari",                      VideoGamePub: "Atari",          ReleaseYear: 1972,  Platform: "Arcade"}
+                /*{VideoGameName: "Battlefield 1",                        VideoGameGenre: "First-person shooter",     VideoGameDev: "DICE",                       ReleaseYear: 2016,  Platform: "Xbox One" },
                 {VideoGameName: "Halo 5: Guardians",                    VideoGameGenre: "First-person shooter",     VideoGameDev: "343 Industries",             ReleaseYear: 2015,  Platform: "Xbox One" },
                 {VideoGameName: "Overwatch",                            VideoGameGenre: "First-person shooter",     VideoGameDev: "Blizzard Entertainment",     ReleaseYear: 2016,  Platform: "PC"},
                 {VideoGameName: "Portal 2",                             VideoGameGenre: "Puzzle-platform",          VideoGameDev: "Valve",                      ReleaseYear: 2011,  Platform: "PC"},
@@ -15,4 +16,4 @@ var data = [
                 {VideoGameName: "Super Mario World",                    VideoGameGenre: "Platformer",               VideoGameDev: "Nintendo",                   ReleaseYear: 1991,  Platform: "Super Nintendo Entertainment System"},
                 {VideoGameName: "Donkey Kong Country",                  VideoGameGenre: "Platformer",               VideoGameDev: "Rare",                       ReleaseYear: 1994,  Platform: "Super Nintendo Entertainment System"},
                 {VideoGameName: "Grand Theft Auto: San Andreas",        VideoGameGenre: "Action-adventure",         VideoGameDev: "Rockstar",                   ReleaseYear: 2004,  Platform: "PlayStation 2"}
-            ];
+            */];
